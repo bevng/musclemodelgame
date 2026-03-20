@@ -7,105 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body></body>
+    <h1 class="page-title">muscle model card game</h1>
+    <p class="page-instructions"> Gameplay instructions (Read these instructions out loud to the whole team) <p>
+        <p>
+            Your team is working together to answer questions about muscle contractions and movements. 
+            You will take turns picking a card and using the muscle model to demonstrate the movements. 
+            The rest of your team will answer questions based on your demonstration.
+            The team with the most points at the end of the game wins!
+        </p>
 
-   <div class="page-wrapper">
-        <h1 class="page-title">muscle model card game</h1>
-        <p class="page-instructions"> click your card to find the answers! <p>
-        
-        <!-- Tab Buttons -->
-        <div class="tab-buttons">
-            <button class="tab-button active" onclick="openTab(event, 'tab1')">level 1</button>
-            <button class="tab-button" onclick="openTab(event, 'tab2')">level 2</button>
-            <button class="tab-button" onclick="openTab(event, 'tab3')">level 3</button>
-        </div>
+        <p> On your turn… </p>
+        <ol>
+            <li> Pick up a card </li>
+            <li> Don’t show anyone else your card! </li>
+            <li> Use the card image and description to set up the muscle model to show the initial position of the movement </li>
+            <li> Say “movement start” </li>
+            <li> Use the syringes to show the muscle contraction/movement </li>
+            <li> Ask the rest of the team the questions on the card. </li>
+            <li> Check the answer at the bottom of the card </li>
+            <li> If any question is answered incorrectly, put the card in the TRY AGAIN pile </li>
+            <li> If all questions are answered correctly, put the card in the WINNER pile </li>
+        </ol>
 
-        <!-- Tab Content Container -->
-        <div class="container">
-            <!-- Tab Contents -->
-            <div id="tab1" class="tab-content active">
-                <!-- Grey Boxes Section -->
-                <div class="boxes-section">
-                    <div class="boxes-container">
-                        <div class="grey-box" onclick="openPopup(event, 'level 1A', '1.concentric 2.extension 3.quadriceps of triceps')">
-                            <span class="box-label">A</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 1B', '1.concentric 2.flexion 3.hamstrings or biceps')">
-                            <span class="box-label">B</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 1C', '1.eccentric 2.flexion 3.triceps')">
-                            <span class="box-label">C</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 1D', '1.eccentric 2.extension 3.biceps or hamstrings ')">
-                            <span class="box-label">D</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'coming soon', '-')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p> When the time runs out… </p>
+        <ol>
+            <li> Pick up all the WINNER cards and add up your points </li>
+            <li> Tell a TA how many points your team got </li>
+            <li> Put all played cards back into their respective Level piles </li>
+        </ol>
 
-            <div id="tab2" class="tab-content">
-               <div class="boxes-section">
-                    <div class="boxes-container">
-                          <div class="grey-box" onclick="openPopup(event, 'level 2A', '1.concentric 2.flexion 3.uhh use your judgement')">
-                            <span class="box-label">A</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 2B', '1.concentric 2.extension 3.what do you think?')">
-                            <span class="box-label">B</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 2C', '1.eccentric 2.extension 3.lesser')">
-                            <span class="box-label">C</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'level 2D', '1.eccentric 2.flexion 3.quadriceps or triceps')">
-                            <span class="box-label">D</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'coming soon', '-')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="tab3" class="tab-content">
-                <div class="boxes-section">
-                    <div class="boxes-container">
-                          <div class="grey-box" onclick="openPopup(event, 'Box 1', 'This is the content for Box 1')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'Box 2', 'This is the content for Box 2')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'Box 3', 'This is the content for Box 3')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'Box 4', 'This is the content for Box 4')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                        <div class="grey-box" onclick="openPopup(event, 'Box 5', 'This is the content for Box 5')">
-                            <span class="box-label">coming soon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!-- Popup Modal -->
-    <div id="popupModal" class="modal" onclick="closePopup(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="modal-header">
-                <h2 id="popupTitle">Title</h2>
-                <button class="close-button" onclick="closePopup()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p id="popupContent">Content goes here</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-    
+        <button onclick="window.location.href= 'cards.html'">Start Game</button>
 </body>
+
 </html>
