@@ -132,16 +132,33 @@ li {
     margin-bottom: 10px;
 }
 
-/* Grey Boxes Styles */
-.boxes-container {
+/* Grey Cards Styles */
+.cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
+    justify-items: center;
+}
+.center-card { /*use this class to center single cards like level 1*/
+    width: min(95%, 650px);
+    max-width: 800px;
+    justify-self: center;
+    grid-column: 1 / -1;
+}
+.level1-card {
+    align-content: center;
+    background-color: #86ae9b;
+    padding: 50px 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.grey-box {
+.grey-card {
     aspect-ratio: 3/4;
+    width: 100%;
     background-color: #d3d3d3;
     border-radius: 8px;
     cursor: pointer;
@@ -149,7 +166,7 @@ li {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.grey-box:hover {
+.grey-card:hover {
     background-color: #b8b8b8;
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -233,7 +250,7 @@ li {
     margin-bottom: 10px;
 }
 
-.box-label {
+.card-label {
     display: flex;
     justify-content: center;
     align-items: center;
