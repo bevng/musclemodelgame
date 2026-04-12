@@ -272,3 +272,55 @@ button {
   align-items: center;
   font-size: 15px;
 }
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+    margin-top: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+
+
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+    justify-content: left
+}
+
+.nav-button {
+    padding: 10px 30px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #666;
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

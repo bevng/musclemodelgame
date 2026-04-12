@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <button onclick="window.location.href= 'index.html'">Back to instructions</button>
+    <div class="nav-buttons">
+    <button class="nav-button" onclick="window.location.href= 'instructions.html'">instructions</button>
+    <button class="nav-button" onclick="window.location.href= 'model.html'">how to use the model</button>
+    </div>
 </head>
 <body>
 
    <div class="page-wrapper">
         <h1 class="page-title">muscle model card game</h1>
+
+        <div class="timer-container">
+    <div class="timer-display" id="timerDisplay">15:00</div>
+</div>
+
         <p class="page-instructions"> click your level and card for help with answers! <p></p>
         
         <!-- Tab Buttons -->
@@ -23,7 +31,7 @@
         <!-- Tab Content Container -->
         <div class="container">
             <!-- Tab Contents -->
-            <div id="tab1" class="tab-content active">
+            <div id="tab1" class="tab-content">
                 <!--  Cards Section -->
                  <div class="cards-container">
                     <div class="level1-card center-card" data-card-id="level1" data-card-title="Level 1 Hints and Knowledge Review">
