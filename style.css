@@ -140,21 +140,8 @@ li {
     margin-top: 20px;
     justify-items: center;
 }
-.center-card { /*use this class to center single cards like level 1*/
-    width: min(95%, 650px);
-    max-width: 800px;
-    justify-self: center;
-    grid-column: 1 / -1;
-}
-.level1-card {
-    align-content: center;
-    background-color: #dad5f2;
-    padding: 50px 50px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+
+
 
 .grey-card {
     aspect-ratio: 3/4;
@@ -323,4 +310,26 @@ button {
     background: #f0f0f0;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.level1-card {
+    align-content: center;
+    background-color: #e5e0ff;
+    padding: 40px;
+    max-width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hint-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
 }
