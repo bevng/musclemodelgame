@@ -28,7 +28,7 @@ function openPopupFromCard(cardElement) {
 
     document.getElementById('popupTitle').textContent = cardTitle;
     modalContent.innerHTML = cardContent.innerHTML;
-    modalContent.insertAdjacentHTML('beforeend', `<p style="margin-top:1rem; font-size:0.9rem; color:#555;">Card ID: ${cardId}</p>`);
+ 
     document.body.style.overflow = 'hidden';  // Prevent scrolling when popup is open
     modal.classList.add('active');
 }
@@ -170,7 +170,7 @@ function openPopupFromCard(cardElement) {
 
     document.getElementById('popupTitle').textContent = cardTitle;
     modalContent.innerHTML = cardContent.innerHTML;
-    modalContent.insertAdjacentHTML('beforeend', `<p style="margin-top:1rem; font-size:0.9rem; color:#555;">Card ID: ${cardId}</p>`);
+   
     document.body.style.overflow = 'hidden';  // Prevent scrolling when popup is open
     modal.classList.add('active');
 }

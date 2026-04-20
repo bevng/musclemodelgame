@@ -242,7 +242,7 @@ li {
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #333;
+    color: #1e1e1e;
     font-weight: 600;
     font-size: 30px;
 }
@@ -333,3 +333,4 @@ button {
     width: 100%;
     max-width: 800px;
 }
+
