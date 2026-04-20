@@ -12,16 +12,59 @@
     <div class="text-wrapper">
     <h2 class="page-instructions"> welcome to...</h2>
     <h1 class="page-title">contraction O' clock!</h1>
-        <p class="game-instructions"> Your team will work together to collect as many points as possible within 15 minutes. Collect points by answering questions about muscle contractions!</p>
-        <p class="game-instructions"> The team with the most points at the end of the lab session wins.</p>
-
-        <p class="game-instructions">Everyone in your team will take turns to pick a card, then use the muscle model to show the movement. DO NOT show your card to the rest of the team! They’ll answer questions based on your demonstration.</p>
         
         
-    </div>
-    <button onclick="startNewGame()">Start Game</button>
-    </div>
+    
 
+
+        <div class="slideshow">
+  <!-- Hidden radio inputs to track active slide -->
+  <input type="radio" name="slides" id="slide1" checked style="display: none;">
+  <input type="radio" name="slides" id="slide2" style="display: none;">
+  <input type="radio" name="slides" id="slide3" style="display: none;">
+  <input type="radio" name="slides" id="slide4" style="display: none;">
+ 
+  <!-- Slides container -->
+  <div class="slides-container">
+    <!-- Slide 1 -->
+    <div class="slide slide-1">
+      <p class="game-instructions"> Your team will work together to collect as many points as possible within 15 minutes. Collect points by answering questions about muscle contractions!</p>
+      <p class="game-instructions"> The team with the most points at the end of the lab session wins.</p>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide slide-2">
+       <p class="game-instructions">Everyone in your team will take turns to pick a card, then use the muscle model to show the movement. DO NOT show your card to the rest of the team! They’ll answer questions based on your demonstration.</p>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide slide-3">
+       <p class="game-instructions"> To begin, pick up the BIG card for a group practice round. The whole team can work on this card together. </p>
+      <p class="game-instructions"> After you finish the practice card, go to the next slide!</p>
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide slide-4">
+        <p class="game-instructions"> You have 15 minutes! Begin collecting points!</p>
+       <button onclick="startNewGame()">START GAME</button>
+    </div>
+  </div>
+
+  <!-- Next/Previous Buttons -->
+  <!-- Previous buttons -->
+  <label for="slide1" class="prev prev-2">←</label> <!-- For slide 2: prev is slide 1 -->
+  <label for="slide2" class="prev prev-3">←</label> <!-- For slide 3: prev is slide 2 -->
+   <label for="slide3" class="prev prev-4">←</label> <!-- For slide 4: prev is slide 3 -->
+ 
+  <!-- Next buttons -->
+  <label for="slide2" class="next next-1">→</label> <!-- For slide 1: next is slide 2 -->
+  <label for="slide3" class="next next-2">→</label> <!-- For slide 2: next is slide 3 -->
+  <label for="slide4" class="next next-3">→</label> <!-- For slide 3: next is slide 4 -->
+</div>
+
+</div>
+</div>
+
+
+
+    
     <script src="script.js"></script>
 </body>
 

@@ -52,7 +52,7 @@ li {
 
 .game-instructions {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
@@ -336,3 +336,89 @@ button {
     max-width: 800px;
 }
 
+/* Slideshow container */
+.slideshow {
+  position: relative; /* Parent for absolute children */
+  width: 700px; /* Adjust based on your needs */
+  height: 300px; /* Adjust based on your needs */
+  margin: 2rem auto;
+  border-radius: 8px; /* Optional: rounded corners */
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Slides container */
+.slides-container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+ 
+/* Individual slides */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hide slides by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade transition */
+}
+ 
+/* Show active slide */
+#slide1:checked ~ .slides-container .slide-1,
+#slide2:checked ~ .slides-container .slide-2,
+#slide3:checked ~ .slides-container .slide-3,
+#slide4:checked ~ .slides-container .slide-4 {
+  opacity: 1; /* Make active slide visible */
+  z-index: 1; /* Ensure active slide is on top */
+}
+ 
+
+/* Base button styles */
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  background: rgb(255, 255, 255); /* Semi-transparent background */
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.75rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are above slides */
+  transition: background 0.3s ease;
+  display: none; /* Hide buttons by default */
+}
+ 
+/* Show buttons only for active slide */
+#slide1:checked ~ .prev-1,
+#slide1:checked ~ .next-1,
+#slide2:checked ~ .prev-2,
+#slide2:checked ~ .next-2,
+#slide3:checked ~ .prev-3,
+#slide3:checked ~ .next-3,
+#slide4:checked ~ .prev-4,
+#slide4:checked ~ .next-4 {
+  display: block; /* Show buttons when their slide is active */
+}
+ 
+/* Position buttons */
+.prev { left: 0
+    ; }
+.next { right: 0; }
+ 
+/* Hover effect */
+.prev:hover, .next:hover {
+  background: rgba(209, 209, 209, 0.8);
+}
+ 
+/* Optional: Style button arrows */
+.prev::before, .next::before {
+  font-weight: bold;
+}
